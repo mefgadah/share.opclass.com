@@ -1,0 +1,415 @@
+
+
+<!doctype html>
+<html lang="zh-CN">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noodp" />
+    <title>IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC 连接等等 - 优选小报资源分享</title><meta
+  name="Description"
+  content=""
+/><meta property="og:title" content="IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC 连接等等" />
+<meta property="og:description" content="IPCheck是什么IPCheck是一款开源免费的 IP 工具箱，可以帮助你查看自己的 IP 地址、详细的 IP 信息、检测网站的可用性、检查 DNS 泄露、查看 DNS 出" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/2024-03-25-ipcheck-%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84-ip-%E5%B7%A5%E5%85%B7%E7%AE%B1-%E6%9F%A5ip%E4%BF%A1%E6%81%AF-dns-%E6%B3%84%E9%9C%B2-webrtc-%E8%BF%9E%E6%8E%A5%E7%AD%89%E7%AD%89.md/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-25T15:06:14+08:00" />
+<meta property="article:modified_time" content="2024-03-25T15:06:14+08:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC 连接等等"/>
+<meta name="twitter:description" content="IPCheck是什么IPCheck是一款开源免费的 IP 工具箱，可以帮助你查看自己的 IP 地址、详细的 IP 信息、检测网站的可用性、检查 DNS 泄露、查看 DNS 出"/>
+<meta
+  name="application-name"
+  content="优选小报资源分享"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="优选小报资源分享"
+/>
+
+<meta name="theme-color" content="#f8f8f8" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="http://localhost:1313/posts/2024-03-25-ipcheck-%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84-ip-%E5%B7%A5%E5%85%B7%E7%AE%B1-%E6%9F%A5ip%E4%BF%A1%E6%81%AF-dns-%E6%B3%84%E9%9C%B2-webrtc-%E8%BF%9E%E6%8E%A5%E7%AD%89%E7%AD%89.md/" /><link rel="prev" href="http://localhost:1313/posts/2024-03-25-imagetools-%E9%80%9A%E7%94%A8%E6%8A%A0%E5%9B%BE%E5%B7%A5%E5%85%B7-%E4%B8%80%E9%94%AE%E5%8E%BB%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E5%92%8C%E6%9B%BF%E6%8D%A2%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF.md/" /><link rel="next" href="http://localhost:1313/posts/2024-03-25-%E5%A5%88%E9%A3%9E%E5%B7%A5%E5%8E%82-%E5%9B%BD%E5%86%85%E5%85%8D%E8%B4%B9netflix%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99-%E9%B8%AD%E5%A5%88%E9%A3%9E%E5%BD%B1%E8%A7%86%E5%9B%9E%E5%BD%92-%E7%9B%B4%E8%BF%9E%E6%97%A0%E5%B9%BF%E5%91%8A.md/" />
+<link
+      rel="stylesheet"
+      href="/css/main.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/lib/normalize/normalize.min.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/color.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/style.min.css"
+      
+    /><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/fontawesome-free/all.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/fontawesome-free/all.min.css"
+        
+    /></noscript><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/animate/animate.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/animate/animate.min.css"
+        
+    /></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC 连接等等",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http://localhost:1313/posts/2024-03-25-ipcheck-%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84-ip-%E5%B7%A5%E5%85%B7%E7%AE%B1-%E6%9F%A5ip%E4%BF%A1%E6%81%AF-dns-%E6%B3%84%E9%9C%B2-webrtc-%E8%BF%9E%E6%8E%A5%E7%AD%89%E7%AD%89.md/"
+        },"genre": "posts","wordcount":  717 ,
+        "url": "http://localhost:1313/posts/2024-03-25-ipcheck-%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84-ip-%E5%B7%A5%E5%85%B7%E7%AE%B1-%E6%9F%A5ip%E4%BF%A1%E6%81%AF-dns-%E6%B3%84%E9%9C%B2-webrtc-%E8%BF%9E%E6%8E%A5%E7%AD%89%E7%AD%89.md/","datePublished": "2024-03-25T15:06:14+08:00","dateModified": "2024-03-25T15:06:14+08:00","publisher": {
+            "@type": "Organization",
+            "name": "优选小报"},"author": {
+                "@type": "Person",
+                "name": "优选小报"
+            },"description": ""
+    }
+    </script></head>
+
+  <body
+    header-desktop=""
+    header-mobile=""
+  ><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="优选小报资源分享">优选小报资源分享</a>
+    </div>
+    <div class="menu">
+      <div class="menu-inner"><a
+            class="menu-item"
+            href="/posts/"
+            
+          > 文章
+            </a><a
+            class="menu-item"
+            href="/tags/"
+            
+          > 标签
+            </a><a
+            class="menu-item"
+            href="/categories/"
+            
+          > 分类
+            </a><a
+            class="menu-item"
+            href="/search/"
+            
+              title="搜索"
+            
+          ><i class='fas fa-fw fa-search'></i> 搜索
+            </a><span class="menu-item delimiter"></span><a
+            href="javascript:void(0);"
+            class="menu-item theme-switch"
+            title="切换主题"
+          >
+            <i class="fas fa-adjust fa-fw"></i>
+          </a></div>
+    </div>
+  </div>
+<script type="text/javascript">
+function siteSearch() {
+    var query = document.getElementById('searchBoxq').value;
+    if (query) {
+        var encodedQuery = encodeURIComponent(query);
+        window.location.href = 'https://www.bing.com/search?q=site:opclass.com ' + encodedQuery;
+    }
+}
+</script>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="优选小报资源分享">优选小报资源分享</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><a
+          class="menu-item"
+          href="/posts/"
+          title=""
+          
+        >文章</a><a
+          class="menu-item"
+          href="/tags/"
+          title=""
+          
+        >标签</a><a
+          class="menu-item"
+          href="/categories/"
+          title=""
+          
+        >分类</a><a
+          class="menu-item"
+          href="/search/"
+          title="搜索"
+          
+        ><i class='fas fa-fw fa-search'></i>搜索</a><a
+          href="javascript:void(0);"
+          class="menu-item theme-switch"
+          title="切换主题"
+        >
+          <i class="fas fa-adjust fa-fw"></i>
+        </a></div>
+  </div>
+<script type="text/javascript">
+function siteSearch() {
+    var query = document.getElementById('searchBoxq').value;
+    if (query) {
+        var encodedQuery = encodeURIComponent(query);
+        window.location.href = 'https://www.bing.com/search?q=site:opclass.com ' + encodedQuery;
+    }
+}
+</script>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+        <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">
+      IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC 连接等等
+    </h1><div class="post-meta">
+      <div class="post-meta-line">
+        <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a
+  href="/"
+  
+    title="Author"
+  
+
+ 
+
+  rel="author"
+  class="author"
+>优选小报</a>
+
+        </span></div>
+      <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time
+            datetime="2024-03-25"
+            >2024-03-25</time
+          >&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-25"
+              >2024-03-25</time
+            >&nbsp;<i class="fas fa-pencil-alt fa-fw"></i
+          >&nbsp;约 717 字&nbsp;<i class="far fa-clock fa-fw"></i
+          >&nbsp;预计阅读 2 分钟&nbsp;</div>
+    </div><div class="content" id="content"><h2 id="ipcheck是什么" class="headerLink">
+    <a href="#ipcheck%e6%98%af%e4%bb%80%e4%b9%88" class="header-mark"></a>IPCheck是什么</h2><p>IPCheck是一款开源免费的 IP 工具箱，可以帮助你查看自己的 IP 地址、详细的 IP 信息、检测网站的可用性、检查 DNS 泄露、查看 DNS
+出口信息、进行网速测试，全球延迟测试、MTR 测试等，非常详细的一个IP工具箱，支持Node、Vercel和Docker三种方式部署，利用
+Vue.js开发。</p>
+<p><a
+  href="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzW3TXiavhGicMLWRZ3lv64fXQW5m9g9qiaaGyeM5UsDecIxibrE9ohW7eBA/0"
+  
+
+ 
+
+  rel=""
+  
+><figure><img
+    
+    loading="lazy"
+    src="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzW3TXiavhGicMLWRZ3lv64fXQW5m9g9qiaaGyeM5UsDecIxibrE9ohW7eBA/0"
+    srcset="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzW3TXiavhGicMLWRZ3lv64fXQW5m9g9qiaaGyeM5UsDecIxibrE9ohW7eBA/0,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzW3TXiavhGicMLWRZ3lv64fXQW5m9g9qiaaGyeM5UsDecIxibrE9ohW7eBA/0 1.5x,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzW3TXiavhGicMLWRZ3lv64fXQW5m9g9qiaaGyeM5UsDecIxibrE9ohW7eBA/0 2x"
+    title="IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC
+连接等等"
+    
+    
+  /></figure></a>
+
+<a
+  href="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzh5JAqU9bOgTXTd45vEibnHw978Cvus4q314cQS9sCTO8fTHbf4IEgyg/0"
+  
+
+ 
+
+  rel=""
+  
+><figure><img
+    
+    loading="lazy"
+    src="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzh5JAqU9bOgTXTd45vEibnHw978Cvus4q314cQS9sCTO8fTHbf4IEgyg/0"
+    srcset="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzh5JAqU9bOgTXTd45vEibnHw978Cvus4q314cQS9sCTO8fTHbf4IEgyg/0,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzh5JAqU9bOgTXTd45vEibnHw978Cvus4q314cQS9sCTO8fTHbf4IEgyg/0 1.5x,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzh5JAqU9bOgTXTd45vEibnHw978Cvus4q314cQS9sCTO8fTHbf4IEgyg/0 2x"
+    title="IPCheck-开源免费的 IP 工具箱 查IP信息 DNS 泄露 WebRTC
+连接等等"
+    
+    
+  /></figure></a>
+</p>
+<h2 id="ipcheck功能列表" class="headerLink">
+    <a href="#ipcheck%e5%8a%9f%e8%83%bd%e5%88%97%e8%a1%a8" class="header-mark"></a>IPCheck功能列表</h2><ul>
+<li>🖥️ <strong>看自己的 IP</strong> ：从多个 IPv4 和 IPv6 来源检测显示本机的 IP</li>
+<li>🕵️ <strong>看 IP 信息</strong> ：显示所有 IP 的相关信息，包括国家、地区、ASN、地理位置等</li>
+<li>🚦 <strong>可用性检测</strong> ：检测一些网站的可用性：Google, Github, Youtube, 网易, 百度等</li>
+<li>🚥 <strong>WebRTC 检测</strong> ：查看使用 WebRTC 连接时使用的 IP</li>
+<li>🛑 <strong>DNS 泄露检测</strong> ：查看 DNS 出口信息，以便查看在 VPN/代理的情况下，是否存在 DNS 泄露隐私的风险</li>
+<li>🚀 <strong>网速测试</strong> ：利用边缘网络进行网速测试</li>
+<li>🚏 <strong>代理规则测试</strong> ：配合代理软件的规则设置，测试规则设置是否正常</li>
+<li>🌐 <strong>全球延迟测试</strong> ：从分布在全球的多个服务器进行延迟测试，了解你与全球网络的连接速度</li>
+<li>📡 <strong>MTR 测试</strong> ：从分布在全球的多个服务器进行 MTR 测试，了解你与全球的连接路径</li>
+<li>🌗 <strong>暗黑模式</strong> ：根据系统设置自动切换暗黑/白天模式，也可以手动切换</li>
+<li>📱 <strong>简约模式</strong> ：为移动版提供的专门模式，缩短页面长度，快速查看最重要的信息</li>
+<li>🔍 <strong>查任意 IP 信息</strong> ：可以通过小工具查询任意 IP 的信息</li>
+<li>📲 <strong>支持 PWA</strong> ：可以添加为手机桌面应用以及电脑里的 Chrome 应用</li>
+<li>⌨️ <strong>支持快捷键</strong> ：可以随时输入 <code>?</code> 查看快捷键菜单</li>
+<li>🌍 根据可用性检测结果，返回目前是否可以访问全世界网络的提示</li>
+<li>🇺🇸 🇨🇳 🇫🇷 支持中文、英文、法文</li>
+</ul>
+<h2 id="开源免费的-ip-工具箱地址" class="headerLink">
+    <a href="#%e5%bc%80%e6%ba%90%e5%85%8d%e8%b4%b9%e7%9a%84-ip-%e5%b7%a5%e5%85%b7%e7%ae%b1%e5%9c%b0%e5%9d%80" class="header-mark"></a>开源免费的 IP 工具箱地址</h2><p>官网：https://ipcheck.ing/ <a
+  href="https://ipcheck.ing/"
+  
+
+ 
+
+  rel=""
+  
+>https://ipcheck.ing/</a>
+</p>
+<p>GitHub：https://github.com/jason5ng32/MyIP <a
+  href="https://github.com/jason5ng32/MyIP"
+  
+
+ 
+
+  rel=""
+  
+>https://github.com/jason5ng32/MyIP</a>
+</p>
+<p><strong>资源收集于网络，侵权联系我删除||资源过期扫码关注我私信</strong><figure><img
+    
+    loading="lazy"
+    src="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg"
+    srcset="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg 1.5x,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg 2x"
+    title="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg"
+    
+    
+  /></figure></p>
+</div>
+
+    <div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span>更新于 2024-03-25</span>
+      </div>
+      <div class="post-info-license"></div>
+    </div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share"></div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span
+        ><a href="javascript:void(0);" onclick="window.history.back();"
+          >返回</a
+        ></span
+      >&nbsp;|&nbsp;<span
+        ><a href="/">主页</a></span
+      >
+    </section>
+  </div>
+
+  <div class="post-nav"><a
+        href="/posts/2024-03-25-imagetools-%E9%80%9A%E7%94%A8%E6%8A%A0%E5%9B%BE%E5%B7%A5%E5%85%B7-%E4%B8%80%E9%94%AE%E5%8E%BB%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E5%92%8C%E6%9B%BF%E6%8D%A2%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF.md/"
+        class="prev"
+        rel="prev"
+        title="ImageTools-通用抠图工具 一键去图片背景和替换图片背景"
+        ><i class="fas fa-angle-left fa-fw"></i>ImageTools-通用抠图工具 一键去图片背景和替换图片背景</a
+      >
+      <a
+        href="/posts/2024-03-25-%E5%A5%88%E9%A3%9E%E5%B7%A5%E5%8E%82-%E5%9B%BD%E5%86%85%E5%85%8D%E8%B4%B9netflix%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99-%E9%B8%AD%E5%A5%88%E9%A3%9E%E5%BD%B1%E8%A7%86%E5%9B%9E%E5%BD%92-%E7%9B%B4%E8%BF%9E%E6%97%A0%E5%B9%BF%E5%91%8A.md/"
+        class="next"
+        rel="next"
+        title="奈飞工厂-国内免费Netflix影视网站 鸭奈飞影视回归 直连无广告"
+        >奈飞工厂-国内免费Netflix影视网站 鸭奈飞影视回归 直连无广告<i class="fas fa-angle-right fa-fw"></i
+      ></a></div>
+</div>
+</article></div>
+      </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line">
+          由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.123.8">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+        </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
+            >&nbsp;<a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ></a
+            ></span
+          ></div>
+      <div class="footer-line"></div>
+      <div class="footer-line"></div>
+    </div></footer></div>
+
+    <div id="fixed-buttons"><a
+        href="#back-to-top"
+        id="back-to-top-button"
+        class="fixed-button"
+        title="回到顶部"
+      >
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a
+        href="#"
+        id="view-comments"
+        class="fixed-button"
+        title="查看评论"
+      >
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script
+    type="text/javascript"
+    src="/lib/clipboard/clipboard.min.js"
+    
+  ></script><script
+    type="text/javascript"
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script></div>
+</body>
+</html>

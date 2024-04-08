@@ -1,0 +1,393 @@
+
+
+<!doctype html>
+<html lang="zh-CN">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noodp" />
+    <title>极客时间 Vue 开发实战  从 0 开始搭建大型 Vue 项目 - 优选小报资源分享</title><meta
+  name="Description"
+  content=""
+/><meta property="og:title" content="极客时间 Vue 开发实战  从 0 开始搭建大型 Vue 项目" />
+<meta property="og:description" content="课程信息极客时间 Vue 开发实战，从 0 开始搭建大型 Vue 项目，夸克网盘和阿里云盘下载。 Vue、 React 和 Angular 是当前应用最广的三大前端框架，仅从 GitHub 趋势来看，Vu" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/2024-03-25-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4-vue-%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98--%E4%BB%8E-0-%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%A4%A7%E5%9E%8B-vue-%E9%A1%B9%E7%9B%AE.md/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-25T14:52:39+08:00" />
+<meta property="article:modified_time" content="2024-03-25T14:52:39+08:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="极客时间 Vue 开发实战  从 0 开始搭建大型 Vue 项目"/>
+<meta name="twitter:description" content="课程信息极客时间 Vue 开发实战，从 0 开始搭建大型 Vue 项目，夸克网盘和阿里云盘下载。 Vue、 React 和 Angular 是当前应用最广的三大前端框架，仅从 GitHub 趋势来看，Vu"/>
+<meta
+  name="application-name"
+  content="优选小报资源分享"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="优选小报资源分享"
+/>
+
+<meta name="theme-color" content="#f8f8f8" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="http://localhost:1313/posts/2024-03-25-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4-vue-%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98--%E4%BB%8E-0-%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%A4%A7%E5%9E%8B-vue-%E9%A1%B9%E7%9B%AE.md/" /><link rel="prev" href="http://localhost:1313/posts/2024-03-25-6%E5%A4%A9%E6%8E%8C%E6%8F%A1mysql%E5%9F%BA%E7%A1%80%E8%A7%86%E9%A2%91%E5%AE%8C%E6%95%B4%E8%B5%84%E6%96%99.md/" /><link rel="next" href="http://localhost:1313/posts/2024-03-25-2023%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%92%A9%E5%A6%B9-%E6%A2%B5%E5%85%AC%E5%AD%90-%E8%89%B3%E9%81%87%E5%85%A8%E7%90%83%E5%8D%81%E4%B8%80%E6%9C%9F%E6%89%93%E5%8C%85%E5%A5%97%E9%A4%90%E8%AF%BE%E7%A8%8B.md/" />
+<link
+      rel="stylesheet"
+      href="/css/main.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/lib/normalize/normalize.min.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/color.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/style.min.css"
+      
+    /><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/fontawesome-free/all.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/fontawesome-free/all.min.css"
+        
+    /></noscript><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/animate/animate.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/animate/animate.min.css"
+        
+    /></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "极客时间 Vue 开发实战  从 0 开始搭建大型 Vue 项目",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http://localhost:1313/posts/2024-03-25-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4-vue-%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98--%E4%BB%8E-0-%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%A4%A7%E5%9E%8B-vue-%E9%A1%B9%E7%9B%AE.md/"
+        },"genre": "posts","wordcount":  754 ,
+        "url": "http://localhost:1313/posts/2024-03-25-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4-vue-%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98--%E4%BB%8E-0-%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%A4%A7%E5%9E%8B-vue-%E9%A1%B9%E7%9B%AE.md/","datePublished": "2024-03-25T14:52:39+08:00","dateModified": "2024-03-25T14:52:39+08:00","publisher": {
+            "@type": "Organization",
+            "name": "优选小报"},"author": {
+                "@type": "Person",
+                "name": "优选小报"
+            },"description": ""
+    }
+    </script></head>
+
+  <body
+    header-desktop=""
+    header-mobile=""
+  ><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="优选小报资源分享">优选小报资源分享</a>
+    </div>
+    <div class="menu">
+      <div class="menu-inner"><a
+            class="menu-item"
+            href="/posts/"
+            
+          > 文章
+            </a><a
+            class="menu-item"
+            href="/tags/"
+            
+          > 标签
+            </a><a
+            class="menu-item"
+            href="/categories/"
+            
+          > 分类
+            </a><a
+            class="menu-item"
+            href="/search/"
+            
+              title="搜索"
+            
+          ><i class='fas fa-fw fa-search'></i> 搜索
+            </a><span class="menu-item delimiter"></span><a
+            href="javascript:void(0);"
+            class="menu-item theme-switch"
+            title="切换主题"
+          >
+            <i class="fas fa-adjust fa-fw"></i>
+          </a></div>
+    </div>
+  </div>
+<script type="text/javascript">
+function siteSearch() {
+    var query = document.getElementById('searchBoxq').value;
+    if (query) {
+        var encodedQuery = encodeURIComponent(query);
+        window.location.href = 'https://www.bing.com/search?q=site:opclass.com ' + encodedQuery;
+    }
+}
+</script>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="优选小报资源分享">优选小报资源分享</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><a
+          class="menu-item"
+          href="/posts/"
+          title=""
+          
+        >文章</a><a
+          class="menu-item"
+          href="/tags/"
+          title=""
+          
+        >标签</a><a
+          class="menu-item"
+          href="/categories/"
+          title=""
+          
+        >分类</a><a
+          class="menu-item"
+          href="/search/"
+          title="搜索"
+          
+        ><i class='fas fa-fw fa-search'></i>搜索</a><a
+          href="javascript:void(0);"
+          class="menu-item theme-switch"
+          title="切换主题"
+        >
+          <i class="fas fa-adjust fa-fw"></i>
+        </a></div>
+  </div>
+<script type="text/javascript">
+function siteSearch() {
+    var query = document.getElementById('searchBoxq').value;
+    if (query) {
+        var encodedQuery = encodeURIComponent(query);
+        window.location.href = 'https://www.bing.com/search?q=site:opclass.com ' + encodedQuery;
+    }
+}
+</script>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+        <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">
+      极客时间 Vue 开发实战  从 0 开始搭建大型 Vue 项目
+    </h1><div class="post-meta">
+      <div class="post-meta-line">
+        <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a
+  href="/"
+  
+    title="Author"
+  
+
+ 
+
+  rel="author"
+  class="author"
+>优选小报</a>
+
+        </span></div>
+      <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time
+            datetime="2024-03-25"
+            >2024-03-25</time
+          >&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-25"
+              >2024-03-25</time
+            >&nbsp;<i class="fas fa-pencil-alt fa-fw"></i
+          >&nbsp;约 754 字&nbsp;<i class="far fa-clock fa-fw"></i
+          >&nbsp;预计阅读 2 分钟&nbsp;</div>
+    </div><div class="content" id="content"><h2 id="课程信息" class="headerLink">
+    <a href="#%e8%af%be%e7%a8%8b%e4%bf%a1%e6%81%af" class="header-mark"></a>课程信息</h2><p>极客时间 Vue 开发实战，从 0 开始搭建大型 Vue 项目，夸克网盘和阿里云盘下载。</p>
+<p>Vue、 React 和 Angular 是当前应用最广的三大前端框架，仅从 GitHub 趋势来看，Vue 更是排在了第一位，目前已经达到了 17 万的
+Star。</p>
+<h2 id="课程介绍" class="headerLink">
+    <a href="#%e8%af%be%e7%a8%8b%e4%bb%8b%e7%bb%8d" class="header-mark"></a>课程介绍</h2><p>目前，不管是 BAT 大厂，还是创业公司，Vue 都有广泛的应用，相关技术原理也成为了面试中的必考知识点，对于任何一个前端工程师来说，Vue
+都是一门非常值得我们学习的前端框架。</p>
+<p>大部分人在学习和使用过程，经常面临以下问题：</p>
+<ol>
+<li>概念过多，记不住，真正开发的时候还得一遍又一遍的翻文档；</li>
+<li>没能真正理解数据驱动，总是用各种 hack 方法更改视图，为项目挖了一个又一个的坑；</li>
+<li>工程化不熟练，面对大型项目中的单页面、多页面、前后端分离、mock 联调、构建、打包、单测、持续集成等等一系列流程，手忙脚乱不得要领。</li>
+</ol>
+<p>针对以上痛点，本课程设计了专门的实战环节，帮你在掌握 Vue 技术原理及应用的同时，通过实战项目来打通前端工程化全链路技能点，真正做到学完即用。</p>
+<p>这不仅仅是一门教你如何使用 Vue 的课程，而是会手把手带你用 Vue 完成一个大型项目。</p>
+<ul>
+<li>第一手实战经验：讲师唐金州，开源项目 Ant Design Vue 作者，该项目已成为蚂蚁金服 Ant Design 官方唯一指定的 Vue 版组件库，他会将自己的实战经验毫无保留地分享给你。</li>
+<li>原理 + 习题：Vue + Vue 周边生态核心技术一网打尽，覆盖大型 Vue 项目所要用到的所有核心技术，同时每节课后会搭配习题，帮你牢牢掌握每个知识点。</li>
+<li>实战为王：手把手带你基于 Vue 来开发大型项目 Ant Design Pro ，从开发、测试、打包构建到最终的上线，帮你打通前端工程化全链路技能点。</li>
+</ul>
+<p>学完这门课程，你不仅能够掌握 Vue 的技术原理及其应用， 也会对其底层原理有所了解，并且通过实战项目，你将具备独立负责 Vue 前端项目的能力。</p>
+<h2 id="课程大纲" class="headerLink">
+    <a href="#%e8%af%be%e7%a8%8b%e5%a4%a7%e7%ba%b2" class="header-mark"></a>课程大纲</h2><p><a
+  href="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEz4qOG6z4yEFBFpJ7DRPNC4KNloxdck5L3VTyy3OEn1Mx7Xb0qst4mAw/0"
+  
+
+ 
+
+  rel=""
+  
+><figure><img
+    
+    loading="lazy"
+    src="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEz4qOG6z4yEFBFpJ7DRPNC4KNloxdck5L3VTyy3OEn1Mx7Xb0qst4mAw/0"
+    srcset="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEz4qOG6z4yEFBFpJ7DRPNC4KNloxdck5L3VTyy3OEn1Mx7Xb0qst4mAw/0,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEz4qOG6z4yEFBFpJ7DRPNC4KNloxdck5L3VTyy3OEn1Mx7Xb0qst4mAw/0 1.5x,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEz4qOG6z4yEFBFpJ7DRPNC4KNloxdck5L3VTyy3OEn1Mx7Xb0qst4mAw/0 2x"
+    title="极客时间 Vue 开发实战 从 0 开始搭建大型 Vue
+项目"
+    
+    
+  /></figure></a>
+</p>
+<h2 id="课程下载" class="headerLink">
+    <a href="#%e8%af%be%e7%a8%8b%e4%b8%8b%e8%bd%bd" class="header-mark"></a>课程下载</h2><p>下载地址：夸克网盘 <a
+  href="https://pan.quark.cn/s/c32b66fd07f9"
+  
+
+ 
+
+  rel=""
+  
+>https://pan.quark.cn/s/c32b66fd07f9</a>
+</p>
+<p>下载地址：阿里云盘 <a
+  href="https://www.aliyundrive.com/s/UC55W1pZHij"
+  
+
+ 
+
+  rel=""
+  
+>https://www.aliyundrive.com/s/UC55W1pZHij</a>
+</p>
+<p><strong>资源收集于网络，侵权联系我删除||资源过期扫码关注我私信</strong><figure><img
+    
+    loading="lazy"
+    src="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg"
+    srcset="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg 1.5x,
+        //img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg 2x"
+    title="//img7-1.zhekoulieshou.com/mmbiz_jpg/iaHBVewvSIbAjcr9g6TlCXSfiaDqkbzuEzp207hVzPqT4YGQOAazQ1KNHCeACbia5Lzq4Ckwibe48iar1q7lgVP1o3w/640?wx_fmt=jpeg&amp;from=appmsg"
+    
+    
+  /></figure></p>
+</div>
+
+    <div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span>更新于 2024-03-25</span>
+      </div>
+      <div class="post-info-license"></div>
+    </div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share"></div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section>
+      <span
+        ><a href="javascript:void(0);" onclick="window.history.back();"
+          >返回</a
+        ></span
+      >&nbsp;|&nbsp;<span
+        ><a href="/">主页</a></span
+      >
+    </section>
+  </div>
+
+  <div class="post-nav"><a
+        href="/posts/2024-03-25-6%E5%A4%A9%E6%8E%8C%E6%8F%A1mysql%E5%9F%BA%E7%A1%80%E8%A7%86%E9%A2%91%E5%AE%8C%E6%95%B4%E8%B5%84%E6%96%99.md/"
+        class="prev"
+        rel="prev"
+        title="6天掌握Mysql基础视频【完整资料】"
+        ><i class="fas fa-angle-left fa-fw"></i>6天掌握Mysql基础视频【完整资料】</a
+      >
+      <a
+        href="/posts/2024-03-25-2023%E4%B8%96%E7%95%8C%E5%B7%A1%E5%9B%9E%E6%92%A9%E5%A6%B9-%E6%A2%B5%E5%85%AC%E5%AD%90-%E8%89%B3%E9%81%87%E5%85%A8%E7%90%83%E5%8D%81%E4%B8%80%E6%9C%9F%E6%89%93%E5%8C%85%E5%A5%97%E9%A4%90%E8%AF%BE%E7%A8%8B.md/"
+        class="next"
+        rel="next"
+        title="2023世界巡回撩妹 梵公子 艳遇全球十一期打包套餐课程"
+        >2023世界巡回撩妹 梵公子 艳遇全球十一期打包套餐课程<i class="fas fa-angle-right fa-fw"></i
+      ></a></div>
+</div>
+</article></div>
+      </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line">
+          由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.123.8">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+        </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
+            >&nbsp;<a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ></a
+            ></span
+          ></div>
+      <div class="footer-line"></div>
+      <div class="footer-line"></div>
+    </div></footer></div>
+
+    <div id="fixed-buttons"><a
+        href="#back-to-top"
+        id="back-to-top-button"
+        class="fixed-button"
+        title="回到顶部"
+      >
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a
+        href="#"
+        id="view-comments"
+        class="fixed-button"
+        title="查看评论"
+      >
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script
+    type="text/javascript"
+    src="/lib/clipboard/clipboard.min.js"
+    
+  ></script><script
+    type="text/javascript"
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script></div>
+</body>
+</html>
